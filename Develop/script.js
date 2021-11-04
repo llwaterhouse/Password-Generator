@@ -36,12 +36,17 @@ function generatePassword() {
   const minPwdLength = 8;
   const maxPwdLength = 128;
 
+
 	// Ask how long pwd should be between minPwdLength and maxPwdLen characters
 	var pwdLength = prompt("Enter the length of the password you would like generated (between " + minPwdLength + "-" + maxPwdLength + " characters)");
 
 	// Validate user entered a correct number between  minPwdLength & maxPwdLength
-	while (pwdLength < minPwdLength || pwdLength > maxPwdLength) {
-		pwdLength = prompt("You entered " + pwdLength + "! Enter the length of the password you would like generated ((between " + minPwdLength + "-" + maxPwdLength + " characters)");
+	while ((pwdLength < minPwdLength) || (pwdLength > maxPwdLength)) {
+		// if user clicked "Cancel", then prompt() returns null and they don't want to continue
+		if (pwdLength === null){
+			return ("");
+		}
+		pwdLength = prompt("You entered " + (pwdLength || "nothing") + "! Enter the length of the password you would like generated ((between " + minPwdLength + "-" + maxPwdLength + " characters)");
 	}
 
 	// Build string of possible password characters based on user input. Validate that the user chose to include at least some characters
@@ -61,10 +66,15 @@ function generatePassword() {
 	return builtPwd;
 }
 
-// Write password to the #password input
+// Write password to the #password output textarea
 function writePassword() {
-	var password = generatePassword();
 	var passwordText = document.querySelector('#password');
+passwordText.innerHTML=' ';
+	// passwordText.value="";
+	// console.log("pwdText value= " + passwordText.value);
+	// clear out any password from a previous round ????
+
+	var password = generatePassword();
 
 	passwordText.value = password;
 }
