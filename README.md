@@ -65,11 +65,11 @@ Displaying the randomly generated password
 
 ### Repository
 
-[GitHub repository for this project](https://github.com/llwaterhouse/Portfolio-LindaLW)
+[GitHub repository for this project](https://github.com/llwaterhouse/Password-Generator)
 
 ### Deployed Application
 
-[The deployed GitPage Application](https://llwaterhouse.github.io/Portfolio-LindaLW/)
+[The deployed GitPage Application](https://llwaterhouse.github.io/Password-Generator//)
 
 
 
