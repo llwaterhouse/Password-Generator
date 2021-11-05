@@ -56,12 +56,17 @@ Initial screenshot
 ![Screenshot of initial screen](Assets/images/03-javascript-homework-demo.png)
 
 
-Example of a dialog:
+Prompt for password length
 
-![Screenshot of prompt dialog](Assets/images/Password-length-prompt.png)
+![Screenshot of prompt dialog](Assets/images/Password-length-prompt.PNG)
+
+Example of confirm if type of characters should be included
+
+![Screenshot of confirm dialog](Assets/images/Character-set-confirm.PNG)
+
 
 Displaying the randomly generated password
-![Screenshot of prompt dialog](Assets/images/Generate-password.png)
+![Screenshot of final output](Assets/images/Generate-password.PNG)
 
 ### Repository
 
