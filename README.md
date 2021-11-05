@@ -1,6 +1,6 @@
 # Password-Generator
-Generates a random password
-In Homework #3, we were asked to:
+
+Goals of this application:
 
 * create a randomly generated password based on user criteria
 
@@ -12,6 +12,7 @@ In Homework #3, we were asked to:
     * numbers
     * special characters
 
+
 * based on user input, the program must then generate a random password using the length that the user entered.
 
 
@@ -21,13 +22,15 @@ In Homework #3, we were asked to:
 
 ## Description
 
-* The user is asked for length of the password and what types of characters they want included.
+* The user is asked for the length of the password and what types of characters they want included.
 
 * The length is checked to make sure it's between 8 and 128.  If it's not, the user is told what they entered and asked to enter again.
 
-* If the user doesn't select at least one character set, they are told they need to select at least one and are asked the questions again.
+* If the user doesn't select at least one character set, they are told they need to select at least one and are asked what types of characters they want again.
 
 * If the user selects Cancel when asked about the length, that round of generatePassword is ended.
+
+* Generating another password works properly.
 
 ## Built With
 
@@ -48,15 +51,17 @@ If you want to edit this web page you must have a Github account, and have also 
 
 ### Screenshots
 
-Below is screenshot of my portfolio page as it would look on a desktop
+Initial screenshot
 
-![Screenshot of my portfolio page on desktop](assets/images/Desktop-Portfolio-screenshot.png)
+![Screenshot of initial screen](Assets/images/03-javascript-homework-demo.png)
 
 
+Example of a dialog:
 
-Below is a screenshot of my portfolio page as it would look on a mobile device.
+![Screenshot of prompt dialog](Assets/images/Password-length-prompt.png)
 
-![Screenshot of my portfolio page on mobile](assets/images/Mobile-Portfolio-screenshot.png)
+Displaying the randomly generated password
+![Screenshot of prompt dialog](Assets/images/Generate-password.png)
 
 ### Repository
 
