@@ -14,8 +14,6 @@ In Homework #3, we were asked to:
 
 * based on user input, the program must then generate a random password using the length that the user entered.
 
-* share some information about ourselves and share our contact info
-
 
 ## Author
 - [@LindaWaterhouse](https://www.github.com/llwaterhouse)
@@ -23,15 +21,13 @@ In Homework #3, we were asked to:
 
 ## Description
 
-* I used CSS variables for the colors to make it easy to change colors throughout the documnet.
+* The user is asked for length of the password and what types of characters they want included.
 
-* I used semantic HTML tags to make it obvious where sections were on the page
+* The length is checked to make sure it's between 8 and 128.  If it's not, the user is told what they entered and asked to enter again.
 
-* I used flexbox to make the page responsive
+* If the user doesn't select at least one character set, they are told they need to select at least one and are asked the questions again.
 
-* I also used media queries to make other areas of the page responsive.
-
-* When you click on a project image, it takes you to the deployed page for that project.
+* If the user selects Cancel when asked about the length, that round of generatePassword is ended.
 
 ## Built With
 
